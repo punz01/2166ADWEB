@@ -1,0 +1,260 @@
+
+<!--<h1>{{title}}</h1>
+
+<input type="text" [value]="clientName"/>
+
+<p [style.color]="myColor">This text was style binding!</p>
+
+<p [class]="appliedCSS">This line applied *myClass* property</p>
+<p [class]="notAppliedCSS">While in here, the CSS is not applied</p>
+
+<button (click)="clickMe()">CLICK HERE</button>
+<p>You have clicked the button {{clickCount}} times!</p>
+
+<button (click)="resetClickCount()">RESET COUNT</button>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">Punz Kicks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">All Products</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                        <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">{{clickCount}}</span>
+                    <span class="badge bg-dark text-white ms-1 boxed-pill"><button (click)="resetClickCount()">Reset Cart</button></span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Header-->
+<header class="bg-dark py-3">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-1 fw-bolder">PUNZ KICKS</h1>
+            <p class="lead fw-normal text-white-50 mb-0">start your sneaker collection with us.</p>
+        </div>
+    </div>
+</header>
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-7 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://pimpkicks.com.ph/cdn/shop/products/Jordan1RetroKOChicago2021Men_s1.jpg?v=1629273417" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Jodan 1 Retro KO Chicago 2021</h5>
+                            <!-- Product price-->
+                            Php 40,000 - Php 60,000
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://thesneakart.com/cdn/shop/products/TSA-Sneakers-France-New-Balance-M2002-Protection-Pack-Rain-Cloud-M2002RDA-2_2000x_a5e669b7-dae4-43be-8186-e830236693d4.png?v=1632059093" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">New Balance 2002R Protection Pack Rain Cloud</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">Php 25,000</span>
+                            Php 20,000
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://pimpkicks.com.ph/cdn/shop/files/AdidasSambaOGWhiteBlueGumMen_s1.jpg?v=1694676227" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Adidas Samba OG White Blue Gum</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">Php 6,800</span>
+                            Php 5,000
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://images.prismic.io/sneakql/1d66cfe4-5a0c-4209-a5b0-8dc5e88e9f37_Hero.png?auto=format&ar=1%3A0.6666666666666666&fit=crop&ixlib=react-9.7.0&w=580" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Puma MB1 Rick & Morty Portal</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            Php 8,000 - Php 10,000
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://sa.kickscrew.com/cdn/shop/products/2_0f59ca55-a056-4fdd-9d43-bece1bd3d86f_540x.jpg?v=1695898159" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Vans Fear of God x Era 95 DX Collection 2</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">Php 28,100</span>
+                            Php 25,000
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://store.yankeekicks.com/cdn/shop/products/Travis-Scott-Nike-SB-Dunk-Low-CT5053-001-Release-Date-Price-4.jpg?v=1655905891" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Nike SB Dunk Low Travis Scott</h5>
+                            <!-- Product price-->
+                            Php 75,000 - Php 80,000
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://sneakerbardetroit.com/wp-content/uploads/2017/07/golf-wang-x-converse-one-star-160111C-486-01.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">GOLF WANG x Converse One Star</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">Php 7,500</span>
+                            Php 6,500
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://dribblemedia.com/wp-content/uploads/2021/08/Nike-Zoom-Freak-3-DM-1.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Nike Zoom Freak 3</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            Php 5, 500
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn mt-auto" href="#"><button (click)="clickMe()">Add To Cart</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Punz Kicks 2023</p></div>
+</footer>
