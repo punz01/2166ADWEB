@@ -1,0 +1,57 @@
+<h1 class="title">ANGULAR PIPES</h1>
+<hr>
+<div class="first">
+<h2>Text Format Pipes</h2>
+<p><b>My name in uppercase text: </b>{{name | uppercase}}</p>
+<p><b>My name in lowercase text: </b>{{name | lowercase}}</p>
+<p><b>Our subject for today is: </b>{{subject | uppercase}}</p>
+</div>
+<hr>
+
+
+<div class="second">
+  <h2>Date Pipes</h2>
+  <p><b>Short Date:</b> {{presentDate | date: 'shortDate' }}</p>
+  <p><b>Medium Date:</b> {{presentDate | date: 'mediumDate'}}</p>
+  <p><b>Long Date: </b>{{presentDate | date: 'longDate'}}</p>
+</div>
+<hr>
+
+<div class="third">
+  <h2>Currency Pipes</h2>
+  <p><b>1 dollar to peso: </b>{{pesoprice | currency:'PHP':true}}</p>
+  <p><b>1 peso to dollar: </b>{{dollarprice | currency: '':true}}</p>
+  <p><b>100 dollar to peso: </b>{{pesoprices | currency:'PHP':true}}</p>
+</div>
+<hr>
+
+<div class="fourth">
+  <h2>Decimal Pipes</h2>
+  <p><b>The decimal of 1.2565 is: </b>{{decimalNum1 | number}}</p>
+  <p><b>The decimal of 2.4549 is: </b>{{decimalNum2 | number}}</p>
+  <p><b>The decimal of 3.7854 is: </b>{{decimalNum3 | number}}</p>
+</div>
+<hr>
+
+<div class="fifth">
+  <h2>JSON Pipes</h2>
+  <p>{{data | json}}</p>
+</div>
+<hr>
+
+<div class="sixth">
+  <h2>Percent Pipes</h2>
+  <p>{{a | percent: '2.0-1':'en'}}</p>
+  <p>{{b | percent: '2.0-2':'en'}}</p>
+  <p>{{c | percent: '2.0-2':'en'}}</p>
+</div>
+<hr>
+
+<div class="seventh">
+  <h2>Slice Pipes</h2>
+  <p><b>First to Last Perfumes: </b>{{Perfumes | slice:0:6}}</p>
+  <p><b>First Perfume: </b>{{Perfumes | slice:0:1}}</p>
+  <p><b>First Two Perfumes: </b>{{Perfumes | slice:0:2}}</p>
+</div>
+<hr>
+
